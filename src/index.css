@@ -1,0 +1,129 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f0f4f8, #f187f3);/* Soft background color */
+  color: #faf5f5;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #891887;
+  border-radius: 16px;
+  padding: 30px;
+  width: 700px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #eeeeee; /* Darker gray for titles */
+  margin-bottom: 20px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-right: 12px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+
+
+.add {
+  padding: 12px 20px;
+  background-color: #63b3ed;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.add:hover {
+  background-color: #4299e1;
+  transform: translateY(-2px);
+}
+
+.list {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+.todo {
+  background-color: #edf2f7;
+  padding: 14px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.todo .text {
+  font-size: 16px;
+  color: #2d3748;
+  flex-grow: 1;
+}
+
+.todo .icon {
+  display: flex;
+  gap: 8px;
+}
+
+.todo .icon .edit, .todo .icon .delete {
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.2s;
+  color: white; /* Ensure text color is white */
+  font-size: 14px; /* Adjust font size for better readability */
+  text-align: center; /* Center text inside div */
+}
+
+.todo .icon .edit {
+  background-color: #2ab757; /* Soft orange */
+}
+
+.todo .icon .edit:hover {
+  background-color: #03661f;
+  transform: translateY(-1px);
+}
+
+.todo .icon .delete {
+  background-color: #f94a4a; /* Soft red */
+}
+
+.todo .icon .delete:hover {
+  background-color: #900606;
+  transform: translateY(-1px);
+}
